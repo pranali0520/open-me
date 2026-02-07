@@ -28,8 +28,11 @@ const Home = () => {
     while (!safe && attempts < 50) {
       attempts++;
       // Random position inside card
-      newLeft = Math.random() * (cardRect.width - buttonWidth - padding * 2) + padding;
-      newTop = Math.random() * (cardRect.height - buttonHeight - padding * 2) + padding;
+      newLeft =
+        Math.random() * (cardRect.width - buttonWidth - padding * 2) + padding;
+      newTop =
+        Math.random() * (cardRect.height - buttonHeight - padding * 2) +
+        padding;
 
       // Check distance from YES button (avoid overlap)
       const yesX = yesRect.left - cardRect.left;
@@ -53,11 +56,13 @@ const Home = () => {
         className="bg-white/80 backdrop-blur-md shadow-xl rounded-2xl p-6 sm:p-8 w-full max-w-sm md:max-w-md lg:max-w-lg text-center border border-rose-200 z-10 relative"
       >
         <h1 className="text-2xl sm:text-3xl font-bold text-rose-600 mb-4">
-          Will You Be My Valentine? 💖
+          From Pallavi,
+          <br /> Will You Be My Valentine? <br />
+          💖
         </h1>
 
         <p className="text-rose-500 text-lg mb-6">
-          In a world full of maybes, you are my always 💖
+          In a world full of maybes, you are my always
         </p>
 
         {/* Buttons container */}
