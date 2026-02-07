@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -13,21 +13,20 @@ const YesButton = () => {
         </h2>
 
         <p className="text-rose-500 text-sm sm:text-xl mb-2">
-          Every moment with you feels like a dream come true.  
+          If you ever tried to press “No,” it wouldn’t work anyway — because
+          you’re already mine.
         </p>
-         <p className="text-rose-500 text-sm sm:text-xl mb-8">
-          I’m so lucky to have you in my life 💘
+        <p className="text-rose-500 text-sm sm:text-xl mb-2">
+          So now… chal, chocolate gift karde 🎁😄
         </p>
 
-         <button
+        <button
           onClick={() => navigate("/")}
-          className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 text-white px-6 py-3 rounded-full transition duration-300 shadow-md transform hover:scale-110 hover:animate-pulse"
+          className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 text-white px-6 py-3 rounded-full transition duration-300 shadow-md transform hover:scale-110 hover:animate-pulse mt-2"
         >
           Back to My Heart 💌
         </button>
       </div>
-
-     
     </div>
   );
 };
